@@ -1,0 +1,398 @@
+:root {
+  --dark-color: #131825;
+  --grean: #38983c;
+}
+/** raido input  style start **/
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 40px;
+  width: 205px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  /* line-height: 3.11; */
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+  /*line-height: 20px;
+  display: inline-block;
+  color: #666; */
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: var(--grean);
+  position: absolute;
+  top: 13px;
+  left: 9px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+[type="radio"]:checked + label::before {
+  border: 2px solid var(--grean);
+}
+/** raido input  style end**/
+.date-price {
+  /* width: 235px; */
+  height: auto;
+  margin-left: 40px;
+  font-family: Poppins !important;
+  font-size: 16px;
+  font-weight: 300 !important;
+  /* line-height: 2.25; */
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #fff !important;
+}
+.menu-icon {
+  width: 28px;
+  height: 18px;
+}
+.logo-icon {
+  width: 124px;
+  height: 34px;
+}
+
+.navbar-v2 {
+  padding-top: 40px;
+}
+
+.reviews-btn {
+  width: 201px;
+  font-size: 18px !important;
+  padding: 16px 48px !important;
+  /* margin-top: 3.4rem; */
+}
+/* .css-z3c6am-MuiFormControl-root-MuiTextField-root {
+  width: 97%;
+} */
+.hearo-booking {
+  margin-top: -135px;
+  /* display: grid; */
+  z-index: 1;
+  width: auto !important;
+  /* width: max-content !important; */
+  height: max-content;
+  /* overflow: hidden; */
+  box-shadow: 0 24px 52px -14px rgba(29, 41, 57, 0.16);
+  border: solid 16px rgba(255, 255, 255, 0.06);
+  background-color: transparent;
+  transform: scale(1.02);
+  grid-template-rows: auto auto;
+}
+.booking-head {
+  padding: 24px 176px 21px 24px;
+
+  display: grid;
+  /* height: 93px; */
+  /* height: 100%; */
+  column-gap: 48px;
+  grid-template-columns: repeat(2, max-content) 1fr;
+  background-color: var(--dark-color);
+}
+.hearo-text {
+  width: 620px;
+  height: 290px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
+  font-weight: 300;
+  font-size: 48px;
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.gray-color {
+  color: #131825;
+}
+.hearo-btn {
+  width: 331px;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px !important;
+  gap: 10px;
+  border: none;
+  padding: 16px 48px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #38983c;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.hearo-btn:hover {
+  background-color: #338d34;
+  border-width: 2px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.value-text {
+  height: 26px;
+  flex-grow: 1;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 2.8; */
+  letter-spacing: normal;
+  text-align: left;
+  color: #131825;
+}
+.book-btn {
+  /* width: 301px !important; */
+  /* height: 112px !important; */
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 1.6;
+  height: 100%;
+  width: 100%;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #fff;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 48px;
+}
+.book-btn:hover {
+  background-color: #338d34;
+  border-width: 2px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.3s ease;
+}
+.dropdwon-style {
+  color: inherit !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 24px 22px 22px 24px !important;
+  width: 100% !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  text-decoration: none !important;
+}
+.dropdwon-menu {
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 50px;
+  border-radius: 0;
+}
+.booking-value-padding {
+  padding: 24px 22px 22px 24px;
+}
+.booking-values section {
+  color: #131825;
+  margin: 1px 0 1px 1px;
+  border: solid 1px #eaeaea;
+  border-right: none;
+  width: 100%;
+}
+.text-padding {
+  padding-bottom: 12px;
+}
+
+.booking-values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 284px); */
+  place-items: center;
+  /* grid-template-columns: repeat(4, auto); */
+  background-color: white;
+}
+
+.hearo-area {
+  background-image: url("../../assets/images/boat-intro.png");
+  /* width: 1440px; */
+  height: 729px;
+  color: #fff;
+  /* overflow: hidden; */
+  background-size: cover;
+  background-color: #131825;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.date-text {
+  height: 32px;
+  font-family: Poppins !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 2;
+  text-align: left;
+  color: #131825;
+}
+@media screen and (max-width: 1040px) {
+  .book-now {
+    /* font-size: 19px; */
+    padding: 20px;
+  }
+  .hearo-area {
+    height: 100%;
+  }
+  .reviews-btn,
+  .head-btn {
+    /* font-size: 17px !important; */
+    /* padding: 0.3rem !important; */
+    /* margin-top: 1.2rem; */
+    height: auto;
+    width: max-content !important;
+    /* flex-direction: column; */
+  }
+  .hearo-booking {
+    grid-template-columns: 1fr 1fr;
+  }
+  .date-price {
+    margin-bottom: 8px;
+  }
+
+  .booking-values {
+    grid-template-columns: auto;
+  }
+  .booking-head {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hearo-area {
+    height: 700px;
+  }
+  .hearo-booking {
+    width: auto !important;
+  }
+  .book-btn {
+    grid-column: 1/1;
+
+    width: 100% !important;
+  }
+  .booking-values {
+    /* grid-template-columns: repeat(4, auto); */
+
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* .hearo-booking {
+    margin-top: -50px;
+  } */
+
+  .hearo-text {
+    /* font-size: 1.8rem; */
+    height: auto;
+  }
+  .booking-values {
+    padding: 5px;
+  }
+
+  .booking-values section {
+    border-left: none;
+  }
+  .book-btn {
+    padding: 5px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .book-loop-text-v2,
+  .book-loop-title-v2,
+  .book-loop-btn-btn,
+  .hearo-text {
+    /* font-size: 1.2rem !important; */
+    width: 100%;
+    height: auto;
+  }
+  .hearo-btn {
+    width: auto !important;
+    padding: 10px !important;
+  }
+  .hearo-text {
+    font-size: 2.5rem !important;
+  }
+  .book-loop-title-v2 {
+    padding-top: 0.9rem;
+  }
+  .book-btn {
+    padding: 2px !important;
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;
+    /* width: 200px; */
+  }
+  .hearo-booking {
+    margin-top: -10px;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 300px) {
+  .date-price {
+    /* font-size: 0.6rem; */
+    width: auto !important;
+  }
+  .hearo-booking {
+    box-shadow: none;
+    border: none;
+  }
+  /* .date-title {
+    font-size: 0.9rem;
+  } */
+  .book-btn {
+    flex-direction: column;
+  }
+}
+
+.css-1e68d75-MuiInputBase-root-MuiInput-root {
+  color: #131825;
+
+  flex-grow: 1;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  font-weight: 300;
+
+  letter-spacing: normal !important;
+  text-align: left;
+}

@@ -1,0 +1,55 @@
+.passenger-modal-title {
+  font-family: Poppins !important;
+  font-size: 18px !important;
+  font-weight: 300;
+}
+.MuiPickersDay-today {
+  background-color: #38983c !important;
+  color: white !important;
+  border: none !important;
+}
+.css-oya3p6-MuiSlider-root {
+  border-radius: 0 !important;
+}
+
+.css-1b1myg3-MuiSlider-thumb {
+  border: 4px solid white !important;
+  position: relative;
+}
+.lable {
+  position: absolute;
+  font-family: Poppins !important;
+  top: 50px;
+  width: max-content;
+  transform: translateX(-60px);
+  background-color: #333;
+  color: white;
+  font-size: 17px;
+  padding: 4px 8px;
+  text-align: center;
+  background-color: #38983c;
+}
+.font-12 {
+  font-size: 12px;
+}
+.lable::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 0px;
+  border-left: 9px solid transparent;
+  border-bottom: 20px solid #38983c;
+  border-right: 9px solid transparent;
+  border-top: 9px solid transparent;
+  position: absolute;
+  bottom: 22px;
+  right: 55px;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.no-styles:hover,
+.no-styles:active {
+  background-color: transparent !important;
+  color: inherit !important;
+}

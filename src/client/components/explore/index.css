@@ -1,0 +1,117 @@
+.book-loop-text {
+  width: 743px;
+  height: 190px;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #fff;
+}
+.book-loop-title {
+  padding-top: 142px;
+  font-size: 26px;
+  display: flex;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+/* .arrow-icon-lg {
+  width: 41px;
+  height: 36px;
+} */
+.book-loop-btn {
+  /* width: max-content !important; */
+  width: 273px;
+  height: 64px;
+
+  font-family: Poppins;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  font-size: 16 !important;
+  letter-spacing: 0.8px !important;
+  text-align: left !important;
+  line-height: 2;
+
+  color: #fff;
+  padding: 19px !important;
+  border: 1px solid white !important;
+}
+.book-loop-btn:hover {
+  border-width: 2px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.3s ease;
+}
+.explore-boat {
+  margin-top: 98px;
+  background-image: url("../../assets/images/boat-1.png");
+
+  height: 1280px;
+  width: 100%;
+  color: #fff;
+  background-color: #131825;
+  /* overflow: hidden; */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1400px) {
+  .explore-boat {
+    height: 900px;
+  }
+  .book-loop-title {
+    padding-top: 10px;
+    /* font-size: 22px; */
+  }
+}
+@media screen and (max-width: 800px) {
+  .book-loop-text,
+  .book-loop-title,
+  .book-loop-btn,
+  .section-text {
+    /* font-size: 1.2rem !important; */
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .explore-boat {
+    margin-top: 10px;
+  }
+  .book-loop-btn {
+    background-color: rgba(30, 29, 29, 0.454) !important;
+  }
+  .book-loop-title-v2 {
+    padding-top: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .explore-boats-section-move {
+    transition: transform 1.9998s ease-out;
+  }
+
+  .explore-boats-section-move.down.explore-boat {
+    margin-top: 200px;
+  }
+  .explore-boats-section-move.down {
+    transform: scale(1.1);
+  }
+
+  .explore-boats-section-move.up {
+    transform: scale(1);
+  }
+}

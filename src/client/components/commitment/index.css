@@ -1,0 +1,155 @@
+:root {
+  --dark-color: #131825;
+  --grean: #38983c;
+}
+.popup-booking-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/commitment-area.svg");
+  width: 100%;
+  height: auto;
+}
+.commitment-section {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/commitment-area.svg");
+  width: 100%;
+  height: 474px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  color: #fff;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+.compass-container {
+  height: 300px;
+  width: 210px;
+  /* background-color: #38983c; */
+  position: relative;
+}
+.compass {
+  transition: transform 1.9998s ease-out;
+}
+.compass-icon {
+  top: 220px;
+  left: -250px;
+  position: absolute;
+}
+.ship-icon {
+  width: 78px;
+  height: 116px;
+  margin-top: -10px;
+}
+.commitment-title {
+  width: 584px;
+
+  margin-top: 60px;
+  margin-bottom: 30px;
+  height: 36px;
+  flex-grow: 0;
+  font-family: Poppins !important;
+  font-size: 20px !important;
+  line-height: 1.8;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #131825;
+}
+.Yacht-space {
+  width: 10px;
+  height: 50px;
+  padding: 20px;
+}
+.yacht-side-icon {
+  width: 614px;
+  height: 386px;
+
+  display: flex;
+  flex-direction: row;
+}
+.yacht-side-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .image-container {
+    transition: transform 1.9998s ease-out;
+  }
+
+  .image-container.down {
+    transform: translateX(-30px);
+  }
+
+  .image-container.up {
+    transform: translateX(30px);
+  }
+
+  .compass.down {
+    transform: rotate(80deg);
+  }
+
+  .compass.up {
+    transform: rotate(0deg);
+  }
+}
+.empty-cell {
+  grid-row: 1;
+  grid-column: span 3;
+}
+.container-main {
+  padding: 0 9.25rem;
+}
+.commitment-container {
+  width: 584px;
+
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #131825;
+}
+
+@media screen and (max-width: 1040px) {
+  .commitment-section {
+    /* padding-top: 300px; */
+    height: auto;
+  }
+  .commitment-container {
+    font-size: 1rem !important;
+    padding: 20px !important;
+  }
+  .commitment-title {
+    width: auto;
+    margin: 5px 0;
+    line-height: 1.44;
+    letter-spacing: 1.6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .commitment-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .commitment-container {
+    padding: 0 20px;
+    margin: 50px 0;
+    width: 100%;
+  }
+  .yacht-side-icon {
+    display: none;
+    background-color: #38983c;
+  }
+  .compass-container {
+    display: none;
+  }
+}
