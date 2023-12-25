@@ -1,12 +1,15 @@
 .footer-icons {
   display: flex;
-  gap: 35px;
+
   flex-direction: row;
 }
 
 .footer-icon {
   width: 14px;
   height: 14px;
+}
+.footer-icons a {
+  padding: 5px 17px;
 }
 .terms-porlicy {
   width: 100%;
@@ -34,7 +37,7 @@
 .footer-layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20%;
+  column-gap: 10%;
   /* margin-top: -30px; */
   font-family: Poppins;
   padding-top: 22px;
