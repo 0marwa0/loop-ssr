@@ -10,7 +10,7 @@
   z-index: 1 !important;
 
   transition: all 0.9s;
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .nav-btn {
   width: max-content;
@@ -38,7 +38,7 @@
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .popup_inner {
-  transition: all 0.9s;
+  transition: all 0.9s ease;
   position: absolute;
   left: 0;
   right: 0;
@@ -47,10 +47,11 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  font-size: 32px;
+  font-size: 30px;
   /* background: white; */
 }
 .popup_inner a {
+  color: #ffffffff;
   margin-top: 30px;
 }
 .popup_inner div {
