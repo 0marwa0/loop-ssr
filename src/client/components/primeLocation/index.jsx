@@ -43,9 +43,9 @@ function PrimeLocation() {
               className="section-text 
           white-color"
             >
-              <span className="font-wight-500"> Dubai</span>
-              <span className="font-wight-500"> And Abu Dhabi</span> offer some
-              of the world's most iconic and breathtaking maritime landscapes.
+              <span className="font-wight-500"> Dubai</span> And
+              <span className="font-wight-500"> Abu Dhabi</span> offer some of
+              the world's most iconic and breathtaking maritime landscapes.
             </div>
           </div>
         </section>
