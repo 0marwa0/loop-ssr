@@ -43,7 +43,7 @@ function Navbar() {
             <a href=""> The Loop Yacht</a>
             <a href=""> Meet The Crew</a>
             <a href=""> Locate Loop in Dubai</a>
-            <button className="nav-btn">BOOK NOW</button>
+            <button className="nav-btn">Book Now</button>
           </div>
         </div>
       ) : null}
