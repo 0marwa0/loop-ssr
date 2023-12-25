@@ -54,7 +54,7 @@ function CommitmentSection() {
             <div className="commitment-title">OUR COMMITMENT.....</div>
             <div>
               Our commitment is to provide you with a
-              <span style={{ fontWeight: "300" }}> yacht experience</span> that
+              <span className="font-wight-500"> yacht experience</span> that
               transcends the ordinary.
             </div>
           </div>

@@ -3,7 +3,13 @@
   --grean: #38983c;
 }
 /** raido input  style start **/
-
+.wittcode-3besu {
+  background-color: var(--grean) !important;
+  color: white !important;
+}
+.font-wight-500 {
+  font-weight: 500;
+}
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
   position: absolute;

@@ -8,6 +8,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Tooltip from "@mui/material/Tooltip";
 
 import Slider from "@mui/material/Slider";
+import { makeStyles } from "@mui/styles";
 
 import React from "react";
 const Packages = [
@@ -20,7 +21,15 @@ const Packages = [
   },
 ];
 
+const useStyles = makeStyles({
+  tooltip: {
+    backgroundColor: "green", // Change to your desired background color
+    color: "#FFFFFF", // Change to your desired text color
+  },
+});
 function BookingUI() {
+  const classes = useStyles();
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -115,7 +124,8 @@ function BookingUI() {
                       value={value}
                       onChange={handleChange}
                       valueLabelDisplay="auto"
-                      valueLabelFormat={(value) => `${value}%`}
+                      classes={classes}
+                      valueLabelFormat={(value) => `${value} Passengers `}
                       min={0}
                       style={{ height: "12px" }}
                       color="success"
@@ -126,7 +136,7 @@ function BookingUI() {
                             width: 27,
                           },
                           children: (
-                            <Tooltip title={`Passengers`} placement="bottom">
+                            <Tooltip title={`Passengers `} placement="bottom">
                               <div></div>
                             </Tooltip>
                           ),
